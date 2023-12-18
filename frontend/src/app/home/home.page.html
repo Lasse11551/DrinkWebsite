@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Drink Website
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label position="floating">Recipe name</ion-label>
+      <ion-input [(ngModel)]="recipeName" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-input [(ngModel)]="description" type="text"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="addRecipe()"
+        color="primary" shape="full" expand="block">
+        Add Recipe</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-list>
+</ion-content>
